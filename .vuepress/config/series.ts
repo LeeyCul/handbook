@@ -3,6 +3,7 @@ export const series = {
   '/docs/guide/': [
     'git',
     'npm',
+    'linunx-order'
   ],
   // '/docs/theme/': [
   //   {
