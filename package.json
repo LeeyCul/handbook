@@ -1,8 +1,8 @@
 {
-  "name": "vuepress",
+  "name": "handbook",
   "version": "2.0.0",
   "description": "code is life",
-  "repository": "git@github.com:light5",
+  "repository": "git@github.com:LeeyCul",
   "author": "code is life",
   "license": "MIT",
   "scripts": {
