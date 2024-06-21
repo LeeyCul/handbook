@@ -86,10 +86,10 @@ bannerBrand:
   buttons:
     - { text: 进入, link: '/categories/qianduan/1/' }
   socialLinks:
-    - { icon: LogoGithub , link: 'https://github.com/lighting5' }
+    - { icon: LogoGithub , link: 'https://github.com/LeeyCul' }
 blog:
   socialLinks:
-    - { icon: LogoGithub , link: 'https://github.com/lighting5' }
+    - { icon: LogoGithub , link: 'https://github.com/LeeyCul' }
     - { icon: LogoWechat , link: '/docs/wechat' }
 isShowTitleInHome: true
 actionText: About
