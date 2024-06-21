@@ -12,8 +12,8 @@ bannerBrand:
   description: Code is Life
   tagline: 在无止境的编程代码世界里遨游，用代码改变我们的生活。
   buttons:
-    - { text: 指南手册, link: "/handbook/docs/guide/git" }
-    - { text: 进入, link: "/handbook/categories/qianduan/1/", type: "plain" }
+    - { text: 指南手册, link: "/docs/guide/git" }
+    - { text: 进入, link: "/categories/qianduan/1/", type: "plain" }
   socialLinks:
     - { icon: LogoGithub, link: "https://github.com/LeeyCul" }
 blog:
