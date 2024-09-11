@@ -1,6 +1,6 @@
 ---
 title: Github访问速度太慢？一个小工具就够了！
-date: 2023/09/23
+date: 2024/06/24
 tags:
   - github
 categories:
