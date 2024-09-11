@@ -1,6 +1,6 @@
 ---
 title: 从 0 搭建一个脚手架
-date: 2023/06/22
+date: 2023/06/23
 tags:
   - 脚手架
 categories:
@@ -18,7 +18,7 @@ categories:
 
 ## 搭建项目
 
-### 1、初始化项目\*\*
+### 1、初始化项目
 
 ```
 mkdir ts-project && cd ts-project && npm init -y && npm i typescript -D && npx tsc --init
