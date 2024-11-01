@@ -1,5 +1,5 @@
 ---
-title: .npmrc 以及.yarnrc 配置镜像源
+title: npm你不知道的那些事？.npmrc 以及.yarnrc 配置镜像源
 date: 2024/11/01
 tags:
   - 镜像源
@@ -17,11 +17,25 @@ categories:
 #查看当前设置的源
 npm config get registry
 
+修改包下载源
+npm config set registry https://registry.npmmirror.com
+
 #查看当前npm配置文件信息
 npm config get 和npm config list 功能一致
+
+# 查看全局已经安装过的 node 包
+npm list -g
+
+# 更新指定包
+npm update 包名
+
+# 卸载指定包
+npm uninstall 包名
+测试本地包
+npm link/npm link 模块名/npm unlink 模块名
 ```
 
-## 3、使用 npm 安装依赖
+## 3、使用.npmrc 配置镜像源
 
 ```
 # .npmrc
@@ -35,7 +49,7 @@ registry=https://registry.npmmirror.com
 
 ```
 
-## 4、使用 yarn 安装依赖
+## 4、使用.yarnrc 配置镜像源
 
 ##### 使用小于yarn@2.0安装依赖
 
