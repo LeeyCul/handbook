@@ -130,16 +130,13 @@ git add .
 git commit --amend -m "更新的提交信息"
 
 2.提交多行提交信息的方法
-# 进入 vi 命令界面
-git commit
+git commit -m 'xxx' -m 'xxx' -m 'xxx'
 
-# 按下 i，进入 vi 的插入模式，将下面内容粘贴进入后，输入 :wq 回车即可
-fix:用户模块、购物车模块
-1、修复用户无法注册功能
-2、修复购物车商品批量删除报错问题
 ```
 
 ## 8.git show
 
+```
 检查特定提交中某个文件的状态，修改了什么都可以看到
 git show <commit-hash>:path/to/file
+```
