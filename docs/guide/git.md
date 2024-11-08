@@ -88,13 +88,22 @@ date: 2024/06/21
    git log 【全部】
    git log -3 【最近3条】
 
-2、回退reset
+2、回退reset 默认--mixed
    ps: 应该是上次的id才对
-   git reset --mixed HEAD^ 【会撤销git add .】
+   git reset --mixed HEAD^ 将HEAD(第一个)和index重置到你选定的HEAD  【适用错误提交，会撤销git add .】
+   如：有三个commit，commit1，commit2，commit3，目前最新为commit3，执行:
+   git reset --mixed commit1_id 之后，commit会回到commit1的，同时2、3代码都存在，不用担心代码丢失，但是commit2、commit3的提交记录没有了，你可以选择更改完代码后重新commit提交。同时commit2、commit3的代码没有add .了，需要重新git add 最后提交强制-f即可。
+
+
    git reset --soft HEAD^ 【撤销到上次】  git reset --soft commit_id（最好） 【不会撤销git add .】
-   git reset --hard HEAD^  【撤销 commit、撤销 git add . 操作、撤销修改代码】慎用
+   --soft 和 --mixed效果一致，唯一区别soft会加入了暂存（git add），--mixed没有加入暂存
+
+   git reset --hard HEAD^  【撤销 commit、撤销 git add . 操作、撤销修改代码,会退到指定commit_id】 ！！！慎用
+   如：有三个commit，commit1，commit2，commit3，目前最新为commit3，执行:
+   git reset --hard commit1_id 之后，代码回到commit1的代码，同时2、3代码都没了，也不会存有commit记录。最后提交强制-f即可。
 
 3、回退revert【将撤销版本之后的提交做一个新的commit重新做提交】
+   撤销某个commit的提交，不影响其他，注意如果与其他业务没有耦合，可以用，如果有耦合也再考虑一下
    git revert commit_id
 ```
 
@@ -112,3 +121,25 @@ D---E---F-----------G master
          /         master
 D---E---F
 ```
+
+## 7.commit
+
+```
+# 1.修改最后一次提交忘记包含某个更改或想更新提交信息
+git add .
+git commit --amend -m "更新的提交信息"
+
+2.提交多行提交信息的方法
+# 进入 vi 命令界面
+git commit
+
+# 按下 i，进入 vi 的插入模式，将下面内容粘贴进入后，输入 :wq 回车即可
+fix:用户模块、购物车模块
+1、修复用户无法注册功能
+2、修复购物车商品批量删除报错问题
+```
+
+## 8.git show
+
+检查特定提交中某个文件的状态，修改了什么都可以看到
+git show <commit-hash>:path/to/file
