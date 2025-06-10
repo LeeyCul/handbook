@@ -1,0 +1,6 @@
+import{_ as t,o as e,c as s,e as a}from"./app-4b62f06d.js";const n="/assets/image-54bc539f.png",p="/assets/image-1-2f86fd94.png",i="/assets/image-2-1bcb36be.png",r="/assets/image-3-4dd906e2.png",o={},c=a('<p><strong>natapp 是什么</strong>？</p><p>‌Natapp‌ 是一个基于 ngrok 技术的内网穿透工具，允许用户将自己的内网服务暴露给外网，实现内外网通信。</p><p><strong>官网</strong></p><blockquote><p>https://natapp.cn/ &gt; <img src="'+n+'" alt="alt text"></p></blockquote><p><strong>购买隧道</strong><img src="'+p+'" alt="alt text"></p><h4 id="使用" tabindex="-1"><a class="header-anchor" href="#使用" aria-hidden="true">#</a> 使用</h4><p><strong>1.下载</strong> 下载后解压会有一个 natApp <img src="'+i+`" alt="alt text"></p><p><strong>2.授权</strong> 进入 natapp 所在的文件夹</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>chmod a+x natapp // 授权
+## 然后运行, = 后面需要加上自己隧道生成的token（在natapp我的隧道里可以找到）
+./natapp -authtoken=
+
+ps:mac 电脑需要在电脑安全里面允许
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>框内为映射的网址</p><p><img src="`+r+'" alt="alt text"> 直接访问域名就可以了</p>',11),d=[c];function l(g,m){return e(),s("div",null,d)}const u=t(o,[["render",l],["__file","index.html.vue"]]);export{u as default};
