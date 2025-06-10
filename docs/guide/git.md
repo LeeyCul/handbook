@@ -146,4 +146,5 @@ git show <commit-hash>:path/to/file
 ```
 移除缓存中跟踪的目录，用于以前跟踪，现在又需要忽略的文件。
 git rm --cached <文件目录>
+ps: git rm -r --cached src/api/
 ```
