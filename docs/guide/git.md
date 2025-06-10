@@ -140,3 +140,10 @@ git commit -m 'xxx' -m 'xxx' -m 'xxx'
 检查特定提交中某个文件的状态，修改了什么都可以看到
 git show <commit-hash>:path/to/file
 ```
+
+## 9.git rm --cached
+
+```
+移除缓存中跟踪的目录，用于以前跟踪，现在又需要忽略的文件。
+git rm --cached <文件目录>
+```
